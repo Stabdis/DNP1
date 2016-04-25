@@ -42,6 +42,7 @@ namespace DNP1
         public string password { get; set; }
 
         public virtual List<CreditCard> CreditCards { get; set; }
+        public virtual List<Reservation> Reservations { get; set; }
     }
 
     public class CreditCard
@@ -53,6 +54,56 @@ namespace DNP1
         
         public int UserId { get; set; }
         public virtual User User { get; set; }
+    }
+
+    public class Stage
+    {
+        public int StageId { get; set; }
+        public string Title { get; set; }
+
+        public virtual List<Seat> Seats { get; set; }
+    }
+
+    public class Seat
+    {
+        public int SeatId { get; set; }
+        public int Number { get; set; }
+        
+        public int StageId { get; set; }
+        public virtual Stage Stage { get; set; }
+    }
+
+    public class MovieSession
+    {
+        public int MovieSessionId { get; set; }
+        public float price { get; set; }
+        public DateTime SessionDate { get; set; }
+
+        public int MovieId { get; set; }
+        public virtual Movie Movie { get; set; }
+
+        public int StageId { get; set; }
+        public virtual Stage Stage { get; set; }
+
+        public virtual List<Reservation> Reservations { get; set; }
+    }
+
+    public class Reservation
+    {
+        public int ReservationId { get; set; }
+        public float PricePayed { get; set; }
+
+        public int SeatId { get; set; }
+        public virtual Seat Seat { get; set; }
+
+        public int MovieSessionId { get; set; }
+        public virtual MovieSession MovieSession { get; set; }
+
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
+
+        public int CreditCardId { get; set; }
+        public virtual CreditCard CreditCard { get; set; }
     }
 
 }
