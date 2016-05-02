@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DNP1
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class AddMovie : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace DNP1
                 var movie = new Movie { Title = title };
                 db.Movies.Add(movie);
                 db.SaveChanges();
-                
+
                 Label1.Text = "New movie " + title + " added!";
 
                 ShowMovies();
@@ -57,11 +57,6 @@ namespace DNP1
                 ListBox1.DataValueField = "MovieId";
                 ListBox1.DataBind();
             }
-        }
-
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

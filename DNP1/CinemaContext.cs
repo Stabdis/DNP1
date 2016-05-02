@@ -22,6 +22,8 @@ namespace DNP1
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Movie> Movies { get; set; }
+        public virtual DbSet<Stage> Stages { get; set; }
+        public virtual DbSet<Seat> Seats { get; set; }
     }
 
     public class Movie
