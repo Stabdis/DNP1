@@ -38,3 +38,6 @@ C:\Users\arnas\OneDrive\DNP1\DNP1\obj\Debug\DNP1.pdb
 C:\Users\arnas\OneDrive\DNP1\DNP1\obj\Debug\DNP1.Migrations.InitialCreate.resources
 C:\Users\arnas\OneDrive\DNP1\DNP1\obj\Debug\DNP1.csproj.GenerateResource.Cache
 C:\Users\arnas\OneDrive\DNP1\DNP1\obj\Debug\DNP1.Migrations.InitialCreate1.resources
+C:\Users\user\documents\visual studio 2015\Projects\DNP1\DNP1\obj\Debug\DNP1.Migrations.InitialCreate.resources
+C:\Users\user\documents\visual studio 2015\Projects\DNP1\DNP1\obj\Debug\DNP1.Migrations.InitialCreate1.resources
+C:\Users\user\documents\visual studio 2015\Projects\DNP1\DNP1\obj\Debug\DNP1.csproj.GenerateResource.Cache
